@@ -32,13 +32,21 @@
 			<artifactId>needs-guava</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
-
-		<dependency>
-			<groupId>com.datastax.dse</groupId>
-			<artifactId>dse-java-driver-core</artifactId>
-			<version>1.7.0</version>
-		</dependency>
 	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>with-dse</id>
+
+			<dependencies>
+				<dependency>
+					<groupId>com.datastax.dse</groupId>
+					<artifactId>dse-java-driver-core</artifactId>
+					<version>1.7.0</version>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
