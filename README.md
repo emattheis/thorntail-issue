@@ -53,4 +53,4 @@ The `guava-fail` project contains a trivial JAX-RS application `io.thorntail.exa
 
 This setup works fine until we activate the `with-dse` profile which expresses a dependency on the Datastax DSE driver version `1.7.0` whcih in turn depends on Guava version `19.0`. With the new dependencies, the thorntail plugin decides to strip the Guava JAR (and its dependencies) from the `WEB-INF/lib` directory in the WAR.
 
-The workaround is to disable filtering of `WEB-INF/lib` by the Thorntail Maven plugin by setting the property `thorntail.filterWebinfLib` to `false` or setting the corresponding `filterWebinfLib` configuration to `false` directly on the plugin.
+The workaround is to disable filtering of `WEB-INF/lib` by the Thorntail Maven plugin by setting the property `thorntail.filterWebInfLib` to `false` or setting the corresponding `filterWebInfLib` configuration to `false` directly on the plugin.

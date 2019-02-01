@@ -51,7 +51,7 @@
 			<id>no-filtering</id>
 			
 			<properties>
-				<thorntail.filterWebinfLib>false</thorntail.filterWebinfLib>
+				<thorntail.filterWebInfLib>false</thorntail.filterWebInfLib>
 			</properties>
 		</profile>
 	</profiles>
